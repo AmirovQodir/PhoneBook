@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PhoneBook"
+    }
+  },
+  "defaultProject": "PhoneBook",
+  "cli": {
+    "analytics": false
+  }
 }
