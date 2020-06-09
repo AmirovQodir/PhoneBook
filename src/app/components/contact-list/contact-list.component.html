@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="search-bar">
+        <input type="text" class="input">
+    </div>
+    <app-add-contact-form (addContact)="addContact($event)"></app-add-contact-form>
+    <app-contact *ngFor="let contact of contacts" [contact]="contact"></app-contact>
+</div>
