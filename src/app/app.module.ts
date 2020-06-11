@@ -7,19 +7,25 @@ import { ContactComponent } from './components/contact-list/contact/contact.comp
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { AddContactFormComponent } from './components/contact-list/add-contact-form/add-contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactIdComponent } from './components/contact-id/contact-id.component';
+import { EditContactComponent } from './components/edit-contact/edit-contact.component';
+// import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
     ContactListComponent,
-    AddContactFormComponent
+    AddContactFormComponent,
+    ContactIdComponent,
+    EditContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // AlertModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

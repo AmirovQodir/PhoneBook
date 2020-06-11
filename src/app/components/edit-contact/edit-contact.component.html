@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="edit-form">
+        <form [formGroup]="editContactForm">
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" class="form-control" placeholder="Name" formControlName="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="text" id="phone" class="form-control" placeholder="Phone" formControlName="phone" required>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button type="button" 
+                    class="btn btn-secondary" 
+                    (click)="onCancel()"
+                >
+                    Cancel
+                </button>
+                <button type="submit" 
+                    class="btn btn-primary ml-1" 
+                    [disabled]="!editContactForm.valid" 
+                    (click)="onSubmit()"
+                >
+                    Edit Contact
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

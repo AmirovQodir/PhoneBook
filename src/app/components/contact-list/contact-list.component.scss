@@ -1,12 +1,12 @@
-.container {
-    padding: 10px;
+.container-contacts {
+    width: 500px;
     text-align: center;
+    margin: 15px auto;
+    .search-bar {
+        margin-bottom: 20px;
+    }
 }
-.input {
-    width: 300px;
-    margin: 5px 0;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
+.message {
+    margin-top: 20px;
+    color: rgb(136, 118, 118);
 }
