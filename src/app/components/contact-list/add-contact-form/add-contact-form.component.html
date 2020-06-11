@@ -1,4 +1,4 @@
-<button class="add-contact button"  *ngIf="!isShowForm" (click)="showForm()">Add new contact</button>
+<button class="add-contact btn btn-primary"  *ngIf="!isShowForm" (click)="showForm()">Add new contact</button>
 
 <form *ngIf="isShowForm" [formGroup]="addContactForm">
     <div class="form-content">
@@ -6,7 +6,7 @@
             <label for="name">Name: </label>
             <input type="text" 
                 id="name"
-                class="input"
+                class="form-control"
                 placeholder="Name"
                 formControlName="name"
                 required
@@ -16,7 +16,7 @@
             <label for="phone">Phone: </label>
             <input type="text"
                 id="phone"
-                class="input"
+                class="form-control"
                 placeholder="Phone"
                 formControlName="phone"
                 required
@@ -25,12 +25,12 @@
     </div>
     <div class="form-footer">
         <button type="button" 
-            class="button"
+            class="btn btn-secondary"
             (click)="onCancel()"
         >
         Cancel</button>
         <button type="submit" 
-            class="submit"
+            class="btn btn-primary ml-1"
             [disabled]="!addContactForm.valid"
             (click)="onSubmit()"
         >

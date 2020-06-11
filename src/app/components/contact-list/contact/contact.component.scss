@@ -1,10 +1,15 @@
-.contact {
-    width: 300px;
+:host {
+   .contact {
+    width: 470px;
     margin: 8px auto;
-    padding: 20px;
+    padding: 20px 10px;
     border: 1px solid #c0c0c0;
     border-radius: 5px;
-    .name {
-        font-weight: 600;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        .name {
+            font-weight: 600;
+        }
+    } 
 }
