@@ -19,13 +19,13 @@ export class ContactListComponent implements OnInit {
   }
 
   public contacts: Contact[] = [];
-  public filteredContacts: Contact [] = [];
   public isFiltered: boolean = false;
   public isAdding: boolean = false;
 
   public filter(e: KeyboardEvent): void {
     const value = (e.target as HTMLInputElement).value.toLocaleLowerCase();
     if(value) {
+      this.contacts = this.contactsService.updateContacts();
       this.contacts = this.contacts.filter(contact => contact.name.toLocaleLowerCase().includes(value) || contact.phone.includes(value));
       this.isFiltered = true;
     } else {
